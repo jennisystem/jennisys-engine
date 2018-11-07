@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html, body {
+				margin: 0px;
+				padding: 0px;
+				background: url( 'background.png' );
+				background-size: cover;
+				color: white;
+				font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+			}
+			body {
+				margin-top: 20px;
+			}
+			h1 {
+				font-size: 30px;
+			}
+			h2{
+				font-size: 20px;
+			}
+			#content {
+				background: black;
+				margin: auto;
+				width: 700px;
+				padding: 20px 50px 20px 50px;
+				border-radius: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "content">
+			<center>
+				<img src="logo.png"></img>
+				<h1>{{image}}</h1>
+				<h2>{{points}}% complete</h2>
+			</center>
+			<h3>{{fixed}} out of {{max}} vulnerabilities fixed, worth {{points}} points:</h2>
+			{{vulns}}
+		</div>
+	</body>
+</html>
